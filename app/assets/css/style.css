@@ -2,4 +2,12 @@
   height: "5%";
 }
 
+nav .nav-link {
+  cursor: pointer;
+}
+
+.navbar {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */

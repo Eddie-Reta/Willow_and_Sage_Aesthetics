@@ -3,3 +3,11 @@ $thumbNail: "5%";
 #navImg{
     height: $thumbNail
 }
+nav {
+    .nav-link{
+        cursor: pointer;
+    }
+}
+.navbar {
+    display: block;
+}
