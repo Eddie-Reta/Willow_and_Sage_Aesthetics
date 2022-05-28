@@ -1,13 +1,29 @@
-$thumbNail: "5%";
-
-#navImg{
-    height: $thumbNail
-}
+// Navigation
 nav {
     .nav-link{
         cursor: pointer;
     }
+    #navImg{
+       height: 20vh;
+       border-radius: 50%;
+    }
+    .pageLinks {
+        margin-right: 25%;
+    }
+    .navSocialLinks {
+        height: 12vh;
+        display: flex;
+        justify-content: center ;
+        flex-direction: column;
+        list-style: none;
+    }
 }
 .navbar {
     display: block;
+}
+// Carousel
+.carousel {
+    .carouselImg {
+        height: 65vh;
+    }
 }
