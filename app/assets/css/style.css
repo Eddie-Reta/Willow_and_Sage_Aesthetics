@@ -1,9 +1,17 @@
+nav {
+  background-color: #9fe0a2;
+}
 nav .nav-link {
   cursor: pointer;
 }
 nav #navImg {
   height: 20vh;
   border-radius: 50%;
+}
+nav .navTitle {
+  font-family: "Arima", cursive;
+  font-family: "Dancing Script", cursive;
+  color: #ff914d;
 }
 nav .pageLinks {
   margin-right: 25%;
@@ -15,6 +23,26 @@ nav .navSocialLinks {
   flex-direction: column;
   list-style: none;
 }
+nav .navColumn {
+  background-color: #FFFEF2;
+}
+nav .titleBackgroundClr {
+  background-image: linear-gradient(to right, #9fe0a2, #FFFEF2, #FFFEF2, #FFFEF2);
+}
+nav .titleBackgroundClr .tbc1 {
+  background-image: linear-gradient(to right, #9fe0a2, #9fe0a2, #FFFEF2, #FFFEF2);
+}
+nav .titleBackgroundClr .tbc2 {
+  background-image: linear-gradient(to right, #9fe0a2, #FFFEF2, #FFFEF2, blue);
+}
+nav .socialLinkImg {
+  text-decoration: none;
+  color: #37AB33;
+}
+
+body {
+  background-color: #FFFCE0;
+}
 
 .navbar {
   display: block;
@@ -22,6 +50,11 @@ nav .navSocialLinks {
 
 .carousel .carouselImg {
   height: 65vh;
+}
+
+.map {
+  height: 400px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,17 @@
 // Navigation
 nav {
+    background-color: #9fe0a2;
     .nav-link{
         cursor: pointer;
     }
     #navImg{
        height: 20vh;
        border-radius: 50%;
+    }
+    .navTitle {
+        font-family: 'Arima', cursive;
+        font-family: 'Dancing Script', cursive;
+        color: rgb(255, 145, 77);
     }
     .pageLinks {
         margin-right: 25%;
@@ -17,9 +23,25 @@ nav {
         flex-direction: column;
         list-style: none;
     }
+    .navColumn {
+        background-color: #FFFEF2;
+    }
+    .titleBackgroundClr {
+        background-image: linear-gradient(to right, #9fe0a2, #FFFEF2, #FFFEF2,  #FFFEF2);
+        .tbc1 {
+            background-image: linear-gradient(to right, #9fe0a2, #9fe0a2,#FFFEF2,#FFFEF2);
+        }
+        .tbc2 {
+            background-image: linear-gradient(to right, #9fe0a2, #FFFEF2, #FFFEF2, blue);
+        }
+    }
+    .socialLinkImg {
+        text-decoration: none;
+        color: #37AB33;
+    }
 }
 body {
-    background-color: #9fe0a2;
+    background-color: #FFFCE0;
 }
 .navbar {
     display: block;
