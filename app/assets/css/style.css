@@ -1,8 +1,22 @@
 nav {
   background-color: #9fe0a2;
 }
+nav .bookingBtn {
+  height: min-content;
+  color: #ff914d;
+  font-family: "Arima", cursive;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  margin-top: 5%;
+  border: 2px solid #9fe0a2;
+}
+nav .bookingBtn:hover {
+  color: whitesmoke;
+  background-color: #9fe0a2;
+}
 nav .nav-link {
   cursor: pointer;
+  color: red;
 }
 nav #navImg {
   height: 20vh;
@@ -12,6 +26,9 @@ nav .navTitle {
   font-family: "Arima", cursive;
   font-family: "Dancing Script", cursive;
   color: #ff914d;
+}
+nav #navbarNav {
+  background-color: #FFFCE0;
 }
 nav .pageLinks {
   margin-right: 25%;
@@ -31,6 +48,9 @@ nav .titleBackgroundClr {
 }
 nav .titleBackgroundClr .tbc1 {
   background-image: linear-gradient(to right, #9fe0a2, #9fe0a2, #FFFEF2, #FFFEF2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav .titleBackgroundClr .tbc2 {
   background-image: linear-gradient(to right, #9fe0a2, #FFFEF2, #FFFEF2, blue);
