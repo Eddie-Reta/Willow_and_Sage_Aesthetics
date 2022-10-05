@@ -29,3 +29,24 @@
 //       }
 //     };
 // })
+$(function() {
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
+    $(window).on("click", () => {
+        $('.navbar-collapse').collapse('hide');
+    })
+    //navbar height reduction
+    // $(window).scroll(() => {
+    //     const nav = $(".titleBackgroundClr");
+    //     if ($(document).scrollTop() > 50 ) {
+    //         nav.addClass("navStuck")
+    //     } else {
+    //         nav.removeClass("navStuck");
+    //     }
+    // });
+//     isMobileWidth = () => {
+
+//     };
+//     isMobileWidth();
+  });
