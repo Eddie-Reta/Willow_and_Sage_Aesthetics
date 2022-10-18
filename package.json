@@ -7,8 +7,8 @@
     "test": "jest",
     "scss": "sass app/assets/scss:app/assets/css",
     "start": "npm run watch:all",
-    "watch:scss": "onchange 'app/assets/scss/*.scss' -- npm run scss",
-    "watch:all": "concurrently 'npm run watch:scss' 'node server.js'"
+    "watch:scss": "onchange \"app/assets/scss/*.scss\" -- npm run scss",
+    "watch:all": "concurrently \"npm run watch:scss\" \"node server.js\""
   },
   "repository": {
     "type": "git",
