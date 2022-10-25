@@ -1,14 +1,20 @@
+.main_nav {
+  opacity: 0.8;
+  background-color: #2E2C28;
+}
+
 nav .bookingBtn {
-  color: rgb(255, 145, 77);
+  color: #2E2C28;
+  background-color: #C19A6B;
   font-family: "Arima", cursive;
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
   margin-top: 5%;
-  border: 2px solid #9fe0a2;
+  border: 2px solid whitesmoke;
 }
 nav .bookingBtn:hover {
   color: whitesmoke;
-  background-color: #9fe0a2;
+  background-color: #2E2C28;
 }
 nav .collapseDiv {
   margin-left: 9%;
@@ -20,13 +26,14 @@ nav #navImg {
 nav .navTitle {
   font-family: "Arima", cursive;
   font-family: "Dancing Script", cursive;
-  color: #228B22;
+  background-image: linear-gradient(to right, whitesmoke, #C19A6B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 nav #navbarNav {
-  background-color: #FFFCE0;
+  background-color: #2E2C28;
 }
 nav .navSocialLinks {
-  height: 12vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -50,13 +57,40 @@ nav .titleBackgroundClr .tbc2 {
 nav .nav-item {
   padding: 0.5% 4% 0.5% 4%;
 }
-nav .socialLinkImg {
-  text-decoration: none;
-  color: #37AB33;
+nav .socialLinkImg .fa-instagram {
+  color: #C19A6B;
+}
+nav .socialLinkImg .fa-facebook {
+  color: #1877f2;
 }
 
-.first_div_spa {
-  height: 100vh;
+.nav-link {
+  cursor: pointer;
+  color: whitesmoke;
+  font-family: "Playfair Display", serif;
+}
+
+.nav-link:hover {
+  color: #C19A6B;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, whitesmoke, #2E2C28);
+}
+
+.fst_div_cont {
+  position: relative;
+  background-image: linear-gradient(to bottom right, whitesmoke, #2E2C28);
+  z-index: -2;
+}
+.fst_div_cont .fst_cont_img {
+  opacity: 0.95;
+  position: fixed;
+  bottom: 0;
+  z-index: -10;
+}
+.fst_div_cont .bg_content {
+  position: absolute;
 }
 
 .carousel {
@@ -72,6 +106,21 @@ nav .socialLinkImg {
 .map {
   height: 400px;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  nav {
+    height: 15vh;
+  }
+  .navTitle {
+    margin-left: 22%;
+  }
+  .nav_link_btns {
+    margin-right: 15%;
+  }
+  .bookingBtn {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

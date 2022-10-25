@@ -36,6 +36,19 @@ $(function() {
     $(window).on("click", () => {
         $('.navbar-collapse').collapse('hide');
     })
+    // Window scroll for navbar
+     $(window).scroll(function(){
+        const scroll = $(window).scrollTop()
+        if (scroll > 50) {
+            $(".main_nav").css("opacity", "1")
+        } else if (scroll < 50){
+            $(".main_nav").css("opacity", "")
+        }
+     })
+
+    // const scroll = () => {
+    //     $(window)
+    // };
     //navbar height reduction
     // $(window).scroll(() => {
     //     const nav = $(".titleBackgroundClr");
