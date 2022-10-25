@@ -1,5 +1,4 @@
 .main_nav {
-  opacity: 0.8;
   background-color: #2E2C28;
 }
 
@@ -34,9 +33,6 @@ nav #navbarNav {
   background-color: #2E2C28;
 }
 nav .navSocialLinks {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   list-style: none;
 }
 nav .navColumn {
@@ -108,15 +104,21 @@ body {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   nav {
     height: 15vh;
   }
+  .main_nav {
+    opacity: 0.8;
+    background-color: #2E2C28;
+  }
+}
+@media (min-width: 768px) {
   .navTitle {
     margin-left: 22%;
   }
   .nav_link_btns {
-    margin-right: 15%;
+    margin-right: 5%;
   }
   .bookingBtn {
     font-size: 30px;

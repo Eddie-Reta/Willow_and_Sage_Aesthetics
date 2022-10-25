@@ -10,9 +10,7 @@ $wood_brown: #C19A6B;
 $breakpoint-mobile: 480px;
 // Navigation
 .main_nav{
-    opacity: .8;
     background-color: $dark_gray;
-    
 }
 nav {
     .bookingBtn {
@@ -49,9 +47,9 @@ nav {
     //     // margin-right: 25%;
     // }
     .navSocialLinks {
-        display: flex;
-        justify-content: center ;
-        flex-direction: column;
+        // display: flex;
+        // justify-content: center ;
+        // flex-direction: column;
         list-style: none;
     }
     .navColumn {
@@ -144,26 +142,24 @@ body{
   /////////////
   // Media Queries
 
-  @media (min-width: $breakpoint-mobile) {
-    // .tbc1{
-    //     padding: 0%;
-    // }
-    // .navBrand {
-    //     margin: 0;
-    //     padding: 3%;
-    // }
+  @media (min-width: 992px) {
+    nav{
+        height: 15vh;
+    }
+    .main_nav{
+        opacity: .8;
+        background-color: $dark_gray;
+        
+    }
    }
 
    ////
-   @media (min-width: 768px) {
-        nav{
-            height: 15vh;
-        }
+   @media (min-width: 768px) {      
         .navTitle{
             margin-left: 22%;
         }
         .nav_link_btns{
-            margin-right: 15%;
+            margin-right: 5%;
         }
         .bookingBtn{
             font-size: 30px;
