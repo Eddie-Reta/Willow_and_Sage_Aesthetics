@@ -22,9 +22,6 @@ nav {
         margin-top: 5%;
         border: 2px solid $orangeClr;
     }
-    .bookingBtn_2{
-        width: 50%;
-    }
     .bookingBtn:hover {
         color: $white_smoke_clr;
         background-color: $dark_gray;
@@ -153,9 +150,6 @@ body{
         opacity: .8;
         background-color: $dark_gray;
     }
-    .bookingBtn_2{
-        width: 0;
-    }
     .link_container{
         width: 80%;
     }
@@ -171,5 +165,8 @@ body{
         }
         .bookingBtn{
             font-size: 30px;
+        }
+        .bookingBtn2{
+            width: 25%;
         }
    }
