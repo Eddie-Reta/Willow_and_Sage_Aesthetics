@@ -15,6 +15,9 @@ nav .bookingBtn:hover {
   color: whitesmoke;
   background-color: #2E2C28;
 }
+nav .bookingBtn_2 {
+  width: 30%;
+}
 nav .collapseDiv {
   margin-left: 9%;
 }
@@ -108,6 +111,9 @@ body {
   nav {
     height: 15vh;
   }
+  nav .bookingBtn_2 {
+    width: 50%;
+  }
   .main_nav {
     opacity: 0.8;
     background-color: #2E2C28;
@@ -126,8 +132,16 @@ body {
   .bookingBtn {
     font-size: 30px;
   }
-  .bookingBtn2 {
-    width: 25%;
+}
+@media (min-width: 1441px) {
+  nav .bookingBtn_2 {
+    width: 40%;
+  }
+  .link_container {
+    width: 55%;
+  }
+  .nav_link_btns {
+    margin-right: 6%;
   }
 }
 

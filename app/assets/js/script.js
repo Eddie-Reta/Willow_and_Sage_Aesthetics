@@ -39,9 +39,9 @@ $(function() {
     // Window scroll for navbar
      $(window).scroll(function(){
         const scroll = $(window).scrollTop()
-        if (scroll > 50) {
+        if (scroll > 10) {
             $(".main_nav").css("opacity", "1")
-        } else if (scroll < 50){
+        } else if (scroll < 10){
             $(".main_nav").css("opacity", "")
         }
      })

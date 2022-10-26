@@ -26,6 +26,9 @@ nav {
         color: $white_smoke_clr;
         background-color: $dark_gray;
     }
+    .bookingBtn_2{
+        width: 30%;
+    }
     .collapseDiv{
         margin-left: 9%;
     }
@@ -142,9 +145,12 @@ body{
   /////////////
   // Media Queries
 
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
     nav{
         height: 15vh;
+        .bookingBtn_2{
+            width: 50%;
+        }
     }
     .main_nav{
         opacity: .8;
@@ -153,10 +159,9 @@ body{
     .link_container{
         width: 80%;
     }
-   }
+}
 
-   ////
-   @media (min-width: 768px) {      
+@media (min-width: 768px) {      
         .navTitle{
             margin-left: 15%;
         }
@@ -166,7 +171,20 @@ body{
         .bookingBtn{
             font-size: 30px;
         }
-        .bookingBtn2{
-            width: 25%;
+        // .bookingBtn2{
+        //     width: 25%;
+        // }
+}
+@media (min-width: 1441px) {
+    nav {
+        .bookingBtn_2{
+            width: 40%;
         }
-   }
+    }
+    .link_container{
+        width: 55%;
+    }        
+    .nav_link_btns{
+        margin-right: 6%;
+    }
+} 
