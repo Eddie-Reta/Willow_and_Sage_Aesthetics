@@ -30,6 +30,9 @@
 //     };
 // })
 $(function() {
+
+    const date = new Date().getFullYear();
+
     $('.navbar-nav>li>a').on('click', function(){
         $('.navbar-collapse').collapse('hide');
     });
@@ -45,6 +48,8 @@ $(function() {
             $(".main_nav").css("opacity", "")
         }
      })
+    //  sets date in footer
+    $(".this_year").text(`${date}`);
 
     // const scroll = () => {
     //     $(window)

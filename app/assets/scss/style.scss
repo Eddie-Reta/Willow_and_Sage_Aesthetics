@@ -6,6 +6,9 @@ $forestGreen: #156115;
 $facebook_clr: #1877f2;
 $dark_gray: #2E2C28;
 $wood_brown: #C19A6B;
+$light_gray: #888888;
+// Fonts
+$font_2-font-family: 'Playfair Display',serif;
 
 $breakpoint-mobile: 480px;
 // Navigation
@@ -19,7 +22,6 @@ nav {
         font-family: 'Arima', cursive;
         font-family: 'Dancing Script', cursive;
         font-size: 2rem;
-        margin-top: 5%;
         border: 2px solid $orangeClr;
     }
     .bookingBtn:hover {
@@ -96,43 +98,69 @@ nav {
 // Body ////////////////////////////////////////////////////
 
 body{
-    background-image: linear-gradient(to bottom right, $white_smoke_clr,$dark_gray);
+    background-image: linear-gradient(to right, #28282B, black);
 }
-    
+.font_2 {
+    font-family: $font_2-font-family;
+}
 .fst_div_cont{
-    position: relative;
-    background-image: linear-gradient(to bottom right, $white_smoke_clr,$dark_gray);
-    z-index: -2;
+    // position: relative;
+    // background-image: linear-gradient(to bottom right, $white_smoke_clr,);
+    // z-index: -2;
 
 //    background-image: url("../images/spa.jpeg");
 //     background-size: contain;
 //     background-repeat: no-repeat;
 //     background-position: center;
 //     opacity: 0.7;
-    .fst_cont_img{
-        opacity: .95;
-        position: fixed;
-        bottom: 0;
-        z-index: -10;
-    }
     .bg_content{
+        margin-top: 20%;
         // background-image: url("../images/spa.jpeg");
     
-        // background-size: contain;
+        // background-size: cover;
         // background-repeat: no-repeat;
         // background-position: center;
-        // opacity: 0.7;
-        position: absolute;
-    } 
+        
+         position: relative;
+         .fst_cont_img{
+            position: absolute;
+            z-index: -3;      }
+        .bg_clr{
+            position: absolute;
+            padding: 47%;
+            background-color: $wood_brown;
+            opacity: .8;
+            z-index: -2;
+            border-radius: 5.5%;
+        }
+        div > div > .bg_gray{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: $dark_gray;
+            padding: 10%;
+            z-index: -1;
+            opacity: 0.75;
+            border-radius: 0.5%;
+        }
+        // div > div > h3{
+        //     border-radius: 1.5%;
+        //     background-color: $dark_gray;
+        // }
+     } 
 }
 // Carousel
 .carousel {
-       margin-top: 4%;
-       margin-left: 20%;
-       margin-right: 20%;
-       margin-bottom: 4%;
+    //    margin-top: 4%;
+    //    margin-left: 20%;
+    //    margin-right: 20%;
+    //    margin-bottom: 4%;
     .carouselImg {
-        height: 65vh;
+        height: 20vh;
+    }
+    .carousel-item{
+
     }
 }
 
@@ -142,9 +170,60 @@ body{
     width: 100%;
   }
 
+// Foooter
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 10px;
+    .navSocialLinks {
+        list-style: none;
+    }
+    .socialLinkImg {
+        .fa-instagram{
+            color: $wood_brown;
+        }
+        .fa-facebook{
+            color:$facebook_clr
+        }
+    }
+}
   /////////////
   // Media Queries
+  @media (min-width: 768px) {      
+    .navTitle{
+        margin-left: 15%;
+    }
+    .nav_link_btns{
+        margin-right: 3%;
+    }
+    .bookingBtn{
+        font-size: 30px;
+    }
+    .fst_div_cont .bg_content .bg_clr{
+           
+            padding: 18%;
+           
+            opacity: .5;
+    
+        }
+    
 
+}
+@media (min-width: 768px) {      
+    .navTitle{
+        margin-left: 15%;
+    }
+    .nav_link_btns{
+        margin-right: 3%;
+    }
+    .bookingBtn{
+        font-size: 30px;
+    }
+    .fst_div_cont .bg_content .bg_clr{ 
+            padding: 35%;    
+            opacity: .5;
+        }
+}
 @media (min-width: 992px) {
     nav{
         height: 15vh;
@@ -159,26 +238,14 @@ body{
     .link_container{
         width: 80%;
     }
-}
-
-@media (min-width: 768px) {      
-        .navTitle{
-            margin-left: 15%;
-        }
-        .nav_link_btns{
-            margin-right: 3%;
-        }
-        .bookingBtn{
-            font-size: 30px;
-        }
-        // .bookingBtn2{
-        //     width: 25%;
-        // }
+    .fst_div_cont .bg_content .bg_clr{ 
+        padding: 25%;    
+    }
 }
 @media (min-width: 1441px) {
     nav {
         .bookingBtn_2{
-            width: 40%;
+            width: 36%;
         }
     }
     .link_container{
@@ -186,5 +253,8 @@ body{
     }        
     .nav_link_btns{
         margin-right: 6%;
+    }
+    .fst_div_cont .bg_content .bg_clr{ 
+        padding: 15%;    
     }
 } 

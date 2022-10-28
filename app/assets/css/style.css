@@ -8,7 +8,6 @@ nav .bookingBtn {
   font-family: "Arima", cursive;
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
-  margin-top: 5%;
   border: 2px solid whitesmoke;
 }
 nav .bookingBtn:hover {
@@ -74,39 +73,94 @@ nav .socialLinkImg .fa-facebook {
 }
 
 body {
-  background-image: linear-gradient(to bottom right, whitesmoke, #2E2C28);
+  background-image: linear-gradient(to right, #28282B, black);
 }
 
-.fst_div_cont {
-  position: relative;
-  background-image: linear-gradient(to bottom right, whitesmoke, #2E2C28);
-  z-index: -2;
+.font_2 {
+  font-family: "Playfair Display", serif;
 }
-.fst_div_cont .fst_cont_img {
-  opacity: 0.95;
-  position: fixed;
-  bottom: 0;
-  z-index: -10;
-}
+
 .fst_div_cont .bg_content {
+  margin-top: 20%;
+  position: relative;
+}
+.fst_div_cont .bg_content .fst_cont_img {
   position: absolute;
+  z-index: -3;
+}
+.fst_div_cont .bg_content .bg_clr {
+  position: absolute;
+  padding: 47%;
+  background-color: #C19A6B;
+  opacity: 0.8;
+  z-index: -2;
+  border-radius: 5.5%;
+}
+.fst_div_cont .bg_content div > div > .bg_gray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2E2C28;
+  padding: 10%;
+  z-index: -1;
+  opacity: 0.75;
+  border-radius: 0.5%;
 }
 
-.carousel {
-  margin-top: 4%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 4%;
-}
 .carousel .carouselImg {
-  height: 65vh;
+  height: 20vh;
 }
-
 .map {
   height: 400px;
   width: 100%;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 10px;
+}
+footer .navSocialLinks {
+  list-style: none;
+}
+footer .socialLinkImg .fa-instagram {
+  color: #C19A6B;
+}
+footer .socialLinkImg .fa-facebook {
+  color: #1877f2;
+}
+
+@media (min-width: 768px) {
+  .navTitle {
+    margin-left: 15%;
+  }
+  .nav_link_btns {
+    margin-right: 3%;
+  }
+  .bookingBtn {
+    font-size: 30px;
+  }
+  .fst_div_cont .bg_content .bg_clr {
+    padding: 18%;
+    opacity: 0.5;
+  }
+}
+@media (min-width: 768px) {
+  .navTitle {
+    margin-left: 15%;
+  }
+  .nav_link_btns {
+    margin-right: 3%;
+  }
+  .bookingBtn {
+    font-size: 30px;
+  }
+  .fst_div_cont .bg_content .bg_clr {
+    padding: 35%;
+    opacity: 0.5;
+  }
+}
 @media (min-width: 992px) {
   nav {
     height: 15vh;
@@ -121,27 +175,22 @@ body {
   .link_container {
     width: 80%;
   }
-}
-@media (min-width: 768px) {
-  .navTitle {
-    margin-left: 15%;
-  }
-  .nav_link_btns {
-    margin-right: 3%;
-  }
-  .bookingBtn {
-    font-size: 30px;
+  .fst_div_cont .bg_content .bg_clr {
+    padding: 25%;
   }
 }
 @media (min-width: 1441px) {
   nav .bookingBtn_2 {
-    width: 40%;
+    width: 36%;
   }
   .link_container {
     width: 55%;
   }
   .nav_link_btns {
     margin-right: 6%;
+  }
+  .fst_div_cont .bg_content .bg_clr {
+    padding: 15%;
   }
 }
 
