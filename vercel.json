@@ -6,9 +6,9 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [
+    "app": [
         {
-            "src": "/(.*)",
+            "src": "/views/pages/index.ejs",
             "dest": "/"
         }
     ]
