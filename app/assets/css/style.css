@@ -118,8 +118,8 @@ body .body_div_1 {
 .mapouter {
   position: relative;
   text-align: right;
-  height: 40vh;
-  width: 90vw;
+  height: 60vh;
+  width: 80vw;
 }
 .mapouter .gmap_canvas {
   height: 100%;
@@ -173,6 +173,15 @@ footer .gg_logo:hover {
   }
   .body_div_1 {
     height: 20vh;
+  }
+  .mapouter {
+    width: 40vw;
+  }
+  .mapouter .gmap_canvas {
+    width: 100%;
+  }
+  .mapouter .gmap_canvas iframe {
+    width: 100%;
   }
 }
 @media (min-width: 992px) {

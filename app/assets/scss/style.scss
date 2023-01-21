@@ -226,8 +226,8 @@ body{
 .mapouter{
     position:relative;
     text-align:right;
-    height: 40vh;
-    width: 90vw;
+    height: 60vh;
+    width: 80vw;
     .gmap_canvas{
                 height: 100%;
                 width: 100%;
@@ -311,18 +311,15 @@ footer {
     .body_div_1 {
         height: 20vh;
     }
-    // .mapouter{
-    //     height: unset;
-    //     width: 80vw;
-    //     .gmap_canvas{
-    //         height: unset;
-    //         width: 100%;
-    //         iframe{
-    //             height: unset;
-    //             width: 100%;
-    //         }
-    //     }
-    // }
+    .mapouter{
+        width: 40vw;
+        .gmap_canvas{
+            width: 100%;
+            iframe{
+                width: 100%;
+            }
+        }
+    }
 }
 @media (min-width: 992px) {
     .carouselImg {
