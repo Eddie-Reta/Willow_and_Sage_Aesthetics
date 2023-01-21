@@ -30,9 +30,7 @@
 //     };
 // })
 $(function() {
-
     const date = new Date().getFullYear();
-
     $('.navbar-nav>li>a').on('click', function(){
         $('.navbar-collapse').collapse('hide');
     });
@@ -40,17 +38,33 @@ $(function() {
         $('.navbar-collapse').collapse('hide');
     })
     // Window scroll for navbar
-     $(window).scroll(function(){
-        const scroll = $(window).scrollTop()
-        if (scroll > 10) {
-            $(".main_nav").css("opacity", "1")
-        } else if (scroll < 10){
-            $(".main_nav").css("opacity", "")
-        }
-     })
+     //$(window).scroll(function(){
+    //     const scroll = $(window).scrollTop()
+    //     if (scroll > 10) {{
+    //         $(".main_nav").css({"opacity": "1", "background-color": "rgb(169,186,157)"});
+    //         // $(".navTitle").css({"background-color": "unset", "background-image": "linear-gradient(to right, #FFFFFF, #FFFFFF)"});
+    //         $(".navTitle").css({"color":"whitesmoke"})
+    //         $(".nav-link").css({"color": "whitesmoke"}).addClass("fs-4");
+    //     }} else {
+    //         $(".main_nav").css({"opacity": ".95", "background-color": "whitesmoke"});
+    //         // $(".navTitle").css({"background-color": "unset", "background-image": "linear-gradient(to right, #2E2C28, #C19A6B)"});
+    //         $(".navTitle").css({"color":"#C19A6B"});
+    //         $(".nav-link").css({"color": "#C19A6B"}).removeClass("fs-4");
+    //     }
+    //  })
+    // $(".nav-link").hover(function(){
+    //     $(this).css({"color":"unset"})}, 
+    //     function(){
+    //         const scroll = $(window).scrollTop();          
+    //             if (scroll > 10) {
+    //                 $(this).css({"color":"whitesmoke"});
+    //             } else {
+    //                 $(this).css({"color":"#C19A6B"});
+    //             };
+    // })
+    $("#home_img").hide().fadeIn("normal");
     //  sets date in footer
     $(".this_year").text(`${date}`);
-
     // const scroll = () => {
     //     $(window)
     // };

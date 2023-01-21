@@ -7,15 +7,20 @@ $facebook_clr: #1877f2;
 $dark_gray: #2E2C28;
 $wood_brown: #C19A6B;
 $light_gray: #888888;
+$sage_green: rgb(169,186,157);
 // Fonts
-$font_2-font-family: 'Playfair Display',serif;
+$font_2-font-family:'Playfair Display',serif;
+$font_sanchez-font-family:'Sanchez', serif;
+$font_marck-font-family:'Marck Script', cursive;
+$font_Abel-font-family:'Abel', sans-serif;
 
 $breakpoint-mobile: 480px;
 // Navigation
-.main_nav{
-    background-color: $dark_gray;
-}
 nav {
+    background-color: $sage_green;
+    // .main_nav{
+    //     background-color: red;
+    // }
     .bookingBtn {
         color: $dark_gray;
         background-color: $wood_brown;
@@ -39,11 +44,14 @@ nav {
        border-radius: 50%;
     }
     .navTitle {
-        font-family: 'Arima', cursive;
         font-family: 'Dancing Script', cursive;
-        background-image: linear-gradient(to right, $white_smoke_clr, $wood_brown);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent
+        color: $white_smoke_clr;
+        span {
+            font-family: $font_Abel-font-family;
+        }
+        // background-image: linear-gradient(to right, $dark_gray, $wood_brown);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent
     }
     #navbarNav {
         background-color: $dark_gray;
@@ -89,158 +97,265 @@ nav {
 }
 .nav-link{
     cursor: pointer;
-    color: $white_smoke_clr;
+    color: white;
     font-family: 'Playfair Display', serif;
 }
+// .nav_link_btns{
+//     background-color: $white_smoke_clr;
+// }
 .nav-link:hover{
-    color: $wood_brown;
+    color: unset;
 }
 // Body ////////////////////////////////////////////////////
 
 body{
-    background-image: linear-gradient(to right, #28282B, black);
-}
-.font_2 {
-    font-family: $font_2-font-family;
-}
-.fst_div_cont{
-    // position: relative;
-    // background-image: linear-gradient(to bottom right, $white_smoke_clr,);
-    // z-index: -2;
+    background-color: $white_smoke_clr;
+    color: $dark_gray;
+    // background-image: linear-gradient(to right, $white_smoke_clr, $dark_gray);
+    scroll-snap-type: y mandatory;
+    .body_div_1 {
+        height: 20vh;
+    }
 
-//    background-image: url("../images/spa.jpeg");
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     opacity: 0.7;
-    .bg_content{
-        margin-top: 20%;
-        // background-image: url("../images/spa.jpeg");
-    
-        // background-size: cover;
-        // background-repeat: no-repeat;
-        // background-position: center;
-        
-         position: relative;
-         .fst_cont_img{
-            position: absolute;
-            z-index: -3;      }
-        .bg_clr{
-            position: absolute;
-            padding: 47%;
-            background-color: $wood_brown;
-            opacity: .8;
-            z-index: -2;
-            border-radius: 5.5%;
-        }
-        div > div > .bg_gray{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: $dark_gray;
-            padding: 10%;
-            z-index: -1;
-            opacity: 0.75;
-            border-radius: 0.5%;
-        }
-        // div > div > h3{
-        //     border-radius: 1.5%;
-        //     background-color: $dark_gray;
-        // }
-     } 
 }
+// .font_2 {
+//     font-family: $font_2-font-family;
+// }
+// .fst_div_cont{
+//     // position: relative;
+//     // background-image: linear-gradient(to bottom right, $white_smoke_clr,);
+//     // z-index: -2;
+
+// //    background-image: url("../images/spa.jpeg");
+// //     background-size: contain;
+// //     background-repeat: no-repeat;
+// //     background-position: center;
+// //     opacity: 0.7;
+//     .bg_content{
+//         margin-top: 20%;
+//         // background-image: url("../images/spa.jpeg");
+    
+//         // background-size: cover;
+//         // background-repeat: no-repeat;
+//         // background-position: center;
+        
+//          position: relative;
+//          .fst_cont_img{
+//             position: absolute;
+//             z-index: -3;      }
+//         .bg_clr{
+//             position: absolute;
+//             padding: 47%;
+//             background-color: $wood_brown;
+//             opacity: .8;
+//             z-index: -2;
+//             border-radius: 5.5%;
+//         }
+//         div > div > .bg_gray{
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             background-color: $dark_gray;
+//             padding: 10%;
+//             z-index: -1;
+//             opacity: 0.75;
+//             border-radius: 0.5%;
+//         }
+//         // div > div > h3{
+//         //     border-radius: 1.5%;
+//         //     background-color: $dark_gray;
+//         // }
+//      } 
+// }
+//home page
+.home_page_img{
+    height: 100%;
+    background-image: url("../images/spa.jpeg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sanchez_font {
+    font-family: $font_sanchez-font-family;
+}
+// .home_book_btn{
+//     width: 20%;
+// }
+// Home Paragraph
+#home_para {
+
+    div > div{
+        width: 80%;
+        border-bottom: solid $wood_brown;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+        h2{
+            color: $wood_brown;
+        }
+    }
+}
+#sub_div{
+    border-bottom: solid $wood_brown;
+    margin-bottom: 5%;
+    padding-bottom: 1%;
+    h2 {
+        color: $wood_brown;
+    }
+    form > div:nth-child(2){
+        margin-bottom: 2%;
+        padding-bottom: 2%;
+    }
+}
+
 // Carousel
 .carousel {
     //    margin-top: 4%;
     //    margin-left: 20%;
     //    margin-right: 20%;
     //    margin-bottom: 4%;
-    .carouselImg {
-        height: 20vh;
-    }
+    // .carouselImg {
+    //     height: 20vh;
+    // }
     .carousel-item{
 
     }
 }
 
 //Map
-.map {
-    height: 400px;
-    width: 100%;
-  }
+.mapouter{
+    position:relative;
+    text-align:right;
+    height: 40vh;
+    width: 90vw;
+    .gmap_canvas{
+                height: 100%;
+                width: 100%;
+                iframe{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+}
 
 // Foooter
 footer {
-    position: fixed;
-    bottom: 0;
+    // position: fixed;
+    // bottom: 0;
     font-size: 10px;
     .navSocialLinks {
         list-style: none;
+        border-top: solid 2px $wood_brown;
     }
     .socialLinkImg {
         .fa-instagram{
             color: $wood_brown;
         }
+        .fa-instagram:hover{
+            box-shadow: -2px 5px 10px 2px $sage_green;
+            border-radius: 6px;
+        }
+        .fa-facebook:hover{
+            box-shadow: -2px 5px 10px 2px $sage_green;
+            border-radius: 6px;
+        }
         .fa-facebook{
             color:$facebook_clr
         }
     }
+    .gg_logo{
+        height: 30px;
+    }
+    .gg_logo:hover{
+        box-shadow: -2px 5px 10px 2px $sage_green;
+        border-radius: 6px;
+    }
 }
   /////////////
   // Media Queries
-  @media (min-width: 768px) {      
-    .navTitle{
-        margin-left: 15%;
-    }
-    .nav_link_btns{
-        margin-right: 3%;
-    }
-    .bookingBtn{
-        font-size: 30px;
-    }
-    .fst_div_cont .bg_content .bg_clr{
+//   @media (min-width: 768px) {      
+//     .navTitle{
+//         margin-left: 15%;
+//     }
+//     .nav_link_btns{
+//         margin-right: 3%;
+//     }
+//     .bookingBtn{
+//         font-size: 30px;
+//     }
+//     .fst_div_cont .bg_content .bg_clr{
            
-            padding: 18%;
+//             padding: 18%;
            
-            opacity: .5;
+//             opacity: .5;
     
-        }
+//         }
     
 
-}
-@media (min-width: 768px) {      
+// }
+@media (min-width: 768px) {    
     .navTitle{
         margin-left: 15%;
     }
     .nav_link_btns{
-        margin-right: 3%;
+        // margin-right: 3%;
     }
     .bookingBtn{
         font-size: 30px;
+        margin-right: 3%;
     }
     .fst_div_cont .bg_content .bg_clr{ 
             padding: 35%;    
             opacity: .5;
         }
+    .body_div_1 {
+        height: 20vh;
+    }
+    // .mapouter{
+    //     height: unset;
+    //     width: 80vw;
+    //     .gmap_canvas{
+    //         height: unset;
+    //         width: 100%;
+    //         iframe{
+    //             height: unset;
+    //             width: 100%;
+    //         }
+    //     }
+    // }
 }
 @media (min-width: 992px) {
+    .carouselImg {
+        height: 80vh;
+    }
     nav{
-        height: 15vh;
+        // height: 15vh;
         .bookingBtn_2{
             width: 50%;
         }
     }
-    .main_nav{
-        opacity: .8;
-        background-color: $dark_gray;
-    }
+    // .main_nav{
+    //     opacity: .8;
+    //     background-color: $dark_gray;
+    // }
     .link_container{
         width: 80%;
     }
     .fst_div_cont .bg_content .bg_clr{ 
         padding: 25%;    
     }
+    // .mapouter{
+    //     height: unset;
+    //     width: 80%;
+    //     .gmap_canvas{
+    //         height: unset;
+    //         width: 100%;
+    //         iframe{
+    //             height: unset;
+    //             width: 100%;
+    //         }
+    //     }
+    // }
 }
 @media (min-width: 1441px) {
     nav {
