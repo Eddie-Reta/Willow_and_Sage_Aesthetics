@@ -1,19 +1,12 @@
 //service page
 body{
-    // .service_img_div {
-    //     margin-top: 10%;
-    // }
-    // .service_img {
-    //     height: 75vh;
-    // }
+    .service_img_div {
+        margin-top: 10%;
+        height: 75vh;
+        border-radius: 2.5%;
+    }
 }
 @media (min-width: 768px) {    
-    .service_img_div {
-        margin-top: 25%;
-    }
-    .service_img {
-        height: 20vh;
-    }
 }
 @media (min-width: 992px) {
 
