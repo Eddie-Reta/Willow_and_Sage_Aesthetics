@@ -87,20 +87,20 @@
           <p class="text-center">For Seasonal Newsletters Your Skin Will Love</p>
         </div>
       </div>
-      <form class="d-flex flex-column">
+      <form class="d-flex flex-column" method="POST" action="/">
           <div class="form-group">
             <label for="inputEmail1">Email *</label>
-            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group row">
             <label for="firstName" class="row m-0">Name</label>
             <div class="col-6">
-              <input type="text" class="form-control col-6" id="firstName" aria-describedby="first_name" placeholder="Willow">
+              <input type="text" class="form-control col-6" id="firstName" aria-describedby="first_name" placeholder="Willow" name="fName">
               <small id="first_name" class="form-text text-muted">First Name</small>
             </div>
             <div class="col-6">
-              <input type="text" class="form-control col-6" id="lastName" aria-describedby="last_name" placeholder="Sage">
+              <input type="text" class="form-control col-6" id="lastName" aria-describedby="last_name" placeholder="Sage" name="lName">
             <small id="last_name" class="form-text text-muted">Last Name</small>
             </div>
           </div>

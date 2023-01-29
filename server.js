@@ -16,6 +16,9 @@ app.get("/", (req, res, next) => {
   res.render("index");
   next();
 })
+.post("/", (req,res, next) => {
+  console.log(req.body)
+});
 
 app.get('/services', function (req, res, next) {
   res.render("services");
